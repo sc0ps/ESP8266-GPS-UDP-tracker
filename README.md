@@ -60,8 +60,7 @@ You can choose any valid UDP broadcast address and port depending on your networ
 ## Data Format
 
 The tracker sends GPS data as a comma-separated string via UDP:  
-```BASH $GPGGA,<latitude>,<longitude>,<altitude>,<time>,<satellites>
-```
+`BASH $GPGGA,<latitude>,<longitude>,<altitude>,<time>,<satellites>`
 
 This format is compatible with most mapping and telemetry software that supports UDP input.
 
@@ -80,8 +79,8 @@ The case features:
 - USB-C connector for power  
 - JST 4-pin connector for quick wiring  
 
-![Wemos Case Front](./images/case_wemos_d1_usb-c_jst1.png)  
-![Wemos Case Rear](./images/case_wemos_d1_usb-c_jst2.png)
+![Wemos Case Front](./images/case_wemos_d1_usb-c_jst_1.png)  
+![Wemos Case Rear](./images/case_wemos_d1_usb-c_jst_2.png)
 
 The shark-fin antenna version will be published soon on Printables.
 
@@ -168,4 +167,5 @@ GitHub: [https://github.com/sc0ps/ESP8266-GPS-UDP-tracker](https://github.com/sc
 
 © 2025 Scops Owl Designs  
 All rights reserved.  
+
 For license and usage terms, see [LICENSE](./LICENSE).
