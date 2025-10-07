@@ -154,7 +154,6 @@ You may not:
 
 - Optional configuration of RX/TX and LED pins via web interface  
 - Shark-fin GPS antenna version on Printables 
-- UDP Integration with SondeAutoRX and ChaseMapper.dm  
 
 ---
 
@@ -169,3 +168,4 @@ GitHub: [https://github.com/sc0ps/ESP8266-GPS-UDP-tracker](https://github.com/sc
 All rights reserved.  
 
 For license and usage terms, see [LICENSE](./LICENSE).
+
