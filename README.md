@@ -1,8 +1,8 @@
 # ESP8266 GPS UDP Tracker v1.0
 
-[![ESP8266](https://img.shields.io/badge/ESP8266-Compatible-blue.svg)](#)  
-[![Firmware Only](https://img.shields.io/badge/Firmware-Closed--Source-red.svg)](#)  
-[![Version](https://img.shields.io/badge/Version-1.0-green.svg)](#)  
+[![ESP8266](https://img.shields.io/badge/ESP8266-Compatible-blue.svg)](#) 
+[![Firmware Only](https://img.shields.io/badge/Firmware-Closed--Source-red.svg)](#) 
+[![Version](https://img.shields.io/badge/Version-1.0-green.svg)](#)
 
 A compact ESP8266-based GPS-to-UDP tracker that transmits live GPS coordinates over WiFi.  
 Ideal for DIY tracking, telemetry, and integration with PC or mobile map applications.
@@ -179,6 +179,7 @@ GitHub: [https://github.com/sc0ps/ESP8266-GPS-UDP-tracker](https://github.com/sc
 All rights reserved.  
 
 For license and usage terms, see [LICENSE](./LICENSE).
+
 
 
 
