@@ -44,7 +44,8 @@ Ideal for DIY tracking, telemetry, and integration with PC or mobile map applica
 | Status LED     | →           | D4           |
 | Power (VCC/GND)| →           | 3.3V / GND   |
 
-<p align="center">
+
+<p align="left">
   <img src="./images/gps_wiring_cam_m8q_d1mini.png" width="45%" />
 </p>
 
@@ -178,6 +179,7 @@ GitHub: [https://github.com/sc0ps/ESP8266-GPS-UDP-tracker](https://github.com/sc
 All rights reserved.  
 
 For license and usage terms, see [LICENSE](./LICENSE).
+
 
 
 
