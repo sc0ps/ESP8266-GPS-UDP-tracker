@@ -87,7 +87,8 @@ The cases feature:
 <p align="center">
   <img src="./images/case_wemos_d1_usb-c_jst_1.png" width="45%" />
   <img src="./images/case_wemos_d1_usb-c_jst_2.png" width="45%" />
-  <img src="./images/Ublox_cam _m8q _sharkfin _antenna.png" width="45%" />
+  <img src="./images/Ublox_cam_m8q_sharkfin_antenna.png" width="45%" />
+  <img src="./images/Ublox_cam_m8q_sharkfin_antenna_2.png" width="45%" />
 </p>
 
 ---
@@ -175,3 +176,4 @@ GitHub: [https://github.com/sc0ps/ESP8266-GPS-UDP-tracker](https://github.com/sc
 All rights reserved.  
 
 For license and usage terms, see [LICENSE](./LICENSE).
+
