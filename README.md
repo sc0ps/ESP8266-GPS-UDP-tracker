@@ -116,7 +116,9 @@ Quick overview:
 | Raspberry Pi (AutoRX + ChaseMapper) | Receives GPS via gpsd | Runs tracking and mapping |
 | GPS Module (u-blox CAM-M8Q) | Provides live coordinates | Mounted in shark-fin antenna case |
 
-![GPS Wiring](./images/gps_wiring_cam_m8q_d1mini.png)
+<p align="center">
+  <img src="./images/gps_wiring_cam_m8q_d1mini.png" width="45%" />
+</p>
 
 ---
 
@@ -176,4 +178,5 @@ GitHub: [https://github.com/sc0ps/ESP8266-GPS-UDP-tracker](https://github.com/sc
 All rights reserved.  
 
 For license and usage terms, see [LICENSE](./LICENSE).
+
 
