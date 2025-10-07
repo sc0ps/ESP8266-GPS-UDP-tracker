@@ -1,8 +1,8 @@
 # ESP8266 GPS UDP Tracker v1.0
 
-[![ESP8266](https://img.shields.io/badge/ESP8266-Compatible-blue.svg)](#) 
-[![Firmware Only](https://img.shields.io/badge/Firmware-Closed--Source-red.svg)](#) 
-[![Version](https://img.shields.io/badge/Version-1.0-green.svg)](#)
+[![ESP8266](https://img.shields.io/badge/ESP8266-Compatible-blue.svg)](#)  
+[![Firmware Only](https://img.shields.io/badge/Firmware-Closed--Source-red.svg)](#)  
+[![Version](https://img.shields.io/badge/Version-1.0-green.svg)](#)  
 
 A compact ESP8266-based GPS-to-UDP tracker that transmits live GPS coordinates over WiFi.  
 Ideal for DIY tracking, telemetry, and integration with PC or mobile map applications.
@@ -12,10 +12,10 @@ Ideal for DIY tracking, telemetry, and integration with PC or mobile map applica
 ## Features
 
 - **Web-based configuration portal**  
-  Configure WiFi SSID, password, UDP address, and port from your browser.
+  Configure WiFi SSID, password, UDP address, and port from your browser.  
 - **Automatic Access Point setup on first boot**  
-  Starts its own WiFi network for easy configuration.
-- **Live GPS data broadcast via UDP**
+  Starts its own WiFi network for easy configuration.  
+- **Live GPS data broadcast via UDP**  
 - **Status LED indicators**  
   Visual feedback for WiFi and GPS connection status.
 
@@ -24,14 +24,13 @@ Ideal for DIY tracking, telemetry, and integration with PC or mobile map applica
 ## Quick Start Guide
 
 1. Download the latest firmware: [gps_udp_tracker_v1.0.bin](./firmware/gps_udp_tracker_v1.0.bin)
-2. Flash the provided `gps_udp_tracker_v1.0.bin` file to your ESP8266 (e.g. Wemos D1 Mini or NodeMCU).
+2. Flash the provided `.bin` file to your ESP8266 (e.g., Wemos D1 Mini or NodeMCU).
 3. On first boot, the device creates its own WiFi access point:  
    - SSID: `gps_tracker_setup`  
    - Password: `12345678`
-4. Connect to it and open your browser at:  
-   **http://192.168.4.1**
+4. Connect and open your browser at **http://192.168.4.1**
 5. Enter your WiFi credentials and UDP settings.
-6. Save and restart — the ESP will automatically reconnect to your WiFi whenever available.
+6. Save and restart — the ESP will reconnect automatically.
 7. GPS data will then be transmitted via UDP every second.
 
 ---
@@ -59,8 +58,8 @@ You can choose any valid UDP broadcast address and port depending on your networ
 
 ## Data Format
 
-The tracker sends GPS data as a comma-separated string via UDP:  
-`BASH $GPGGA,<latitude>,<longitude>,<altitude>,<time>,<satellites>`
+The tracker sends GPS data as a comma-separated NMEA string via UDP:  
+`$GPGGA,<latitude>,<longitude>,<altitude>,<time>,<satellites>`
 
 This format is compatible with most mapping and telemetry software that supports UDP input.
 
@@ -68,36 +67,43 @@ This format is compatible with most mapping and telemetry software that supports
 
 ## 3D Printed Case and Hardware Mount
 
-A dedicated 3D-printed enclosure and shark-fin antenna has been designed for this project,  
-fitting the Wemos D1 Mini (ESP8266) and u-blox CAM-M8Q GPS module.
+A dedicated 3D-printed enclosure and shark-fin antenna system has been designed for this project,  
+fitting the Wemos D1 Mini (ESP8266) and the u-blox CAM-M8Q GPS module.
 
-View and download the case on Printables:  
-[Wemos D1 Mini ESP8266 Case with USB-C and 4-pin JST Connector](https://www.printables.com/model/1437053-wemos-d1-mini-esp8266-case-met-usb-c-en-4-pins-jst)
+### Cases on Printables
 
-The case features:
-- Secure fit for Wemos D1 Mini  
-- USB-C connector for power  
-- JST 4-pin connector for quick wiring  
+- **Wemos D1 Mini ESP8266 Case (USB-C + JST-XH Connector)**  
+  [View on Printables](https://www.printables.com/model/1437053-wemos-d1-mini-esp8266-case-met-usb-c-en-4-pins-jst)
 
-![Wemos Case Front](./images/case_wemos_d1_usb-c_jst_1.png)  
-![Wemos Case Rear](./images/case_wemos_d1_usb-c_jst_2.png)
+- **u-blox CAM-M8Q Shark-Fin Antenna Case (with Magnet Mount)**  
+  [View on Printables](https://www.printables.com/model/1437877-u-blox-cam-m8q-shark-fin-antenna-case-with-magnet)
 
-The shark-fin antenna version will be published soon on Printables.
+The cases feature:
+- Secure fit for Wemos D1 Mini and CAM-M8Q  
+- Magnetic base option for vehicle mounting  
+- USB-C connector and JST-XH 4-pin quick connection  
+- Compact, functional design — easy to print without supports  
+
+<p align="center">
+  <img src="./images/case_wemos_d1_usb-c_jst_1.png" width="45%" />
+  <img src="./images/case_wemos_d1_usb-c_jst_2.png" width="45%" />
+  <img src="./images/Ublox_cam _m8q _sharkfin _antenna.png" width="45%" />
+</p>
 
 ---
 
 ## Integration with SondeAutoRX and ChaseMapper
 
-The ESP8266 GPS UDP Tracker is designed to work seamlessly with SondeAutoRX and ChaseMapper,  
-providing live position updates to your Raspberry Pi-based sonde tracking setup.
+The ESP8266 GPS UDP Tracker works seamlessly with **SondeAutoRX** and **ChaseMapper**,  
+providing live GPS position updates to your Raspberry Pi-based tracking setup.
 
-Full setup and configuration guide:  
-[See UDP Integration with SondeAutoRX and ChaseMapper](./docs/UDP_Integration_with_SondeAutoRX_and_ChaseMapper.md)
+📖 Full setup and configuration guide:  
+[UDP Integration with SondeAutoRX and ChaseMapper](./docs/UDP_Integration_with_SondeAutoRX_and_ChaseMapper.md)
 
 Quick overview:
 - Set your Raspberry Pi IP and UDP port in the web interface  
-- Configure ChaseMapper to receive NMEA data via UDP  
-- Works with AutoRX and ChaseMapper for real-time chase tracking
+- gpsd converts the UDP data into a GPSD stream for AutoRX and ChaseMapper  
+- Works out of the box for live chase-car tracking
 
 ---
 
@@ -105,8 +111,8 @@ Quick overview:
 
 | Device | Function | Notes |
 |---------|-----------|-------|
-| ESP8266 GPS Tracker | Sends NMEA data via UDP | Connects to WiFi hotspot or Pi |
-| Raspberry Pi (AutoRX + ChaseMapper) | Receives GPS over UDP | Runs tracking and mapping |
+| ESP8266 GPS Tracker | Sends NMEA data via UDP | Connects to WiFi hotspot or Raspberry Pi |
+| Raspberry Pi (AutoRX + ChaseMapper) | Receives GPS via gpsd | Runs tracking and mapping |
 | GPS Module (u-blox CAM-M8Q) | Provides live coordinates | Mounted in shark-fin antenna case |
 
 ![GPS Wiring](./images/gps_wiring_cam_m8q_d1mini.png)
@@ -140,26 +146,27 @@ The author is not responsible for damage or data loss caused by improper use.
 ## License and Source Code
 
 The source code is not public.  
-You may:
-- Flash and use the provided `.bin` firmware for personal or educational purposes.
-- Share the compiled `.bin` file unmodified.
 
-You may not:
-- Redistribute modified versions of this firmware.
-- Use it commercially or include it in other projects without written permission.
+You may:
+- Flash and use the provided `.bin` firmware for personal or educational purposes.  
+- Share the compiled `.bin` file unmodified.  
+
+You may **not**:
+- Redistribute modified versions of this firmware.  
+- Use it commercially or include it in other projects without written permission.  
 
 ---
 
 ## Future Development
 
 - Optional configuration of RX/TX and LED pins via web interface  
-- Shark-fin GPS antenna version on Printables 
+- Integration with additional mapping software  
 
 ---
 
 ## Author
 
-Scops Owl Designs  
+**Scops Owl Designs**  
 GitHub: [https://github.com/sc0ps/ESP8266-GPS-UDP-tracker](https://github.com/sc0ps/ESP8266-GPS-UDP-tracker)
 
 ---
@@ -168,4 +175,3 @@ GitHub: [https://github.com/sc0ps/ESP8266-GPS-UDP-tracker](https://github.com/sc
 All rights reserved.  
 
 For license and usage terms, see [LICENSE](./LICENSE).
-
