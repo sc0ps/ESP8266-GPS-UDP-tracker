@@ -169,6 +169,24 @@ Restart your ChaseMapper container.
 
 ---
 
+## GPS Fix Requirement
+
+ChaseMapper will only display your vehicle’s position once the GPS module has achieved a valid 3D fix.
+
+gpsd begins streaming NMEA data as soon as the tracker connects,
+but until a 3D fix is obtained, the position values are not considered valid.
+
+In this state, ChaseMapper will show no movement or coordinates on the map.
+
+Once the GPS achieves a 3D fix (latitude, longitude, and altitude lock),
+the position immediately becomes visible in both ChaseMapper and AutoRX.
+
+Note:
+Depending on environmental conditions, it may take several minutes to obtain a first 3D fix —
+especially after power-up, or when operating indoors or under partial sky view.
+
+---
+
 ## Troubleshooting
 
 | Problem | Solution |
@@ -191,3 +209,4 @@ After completing these steps, both **SondeAutoRX** and **ChaseMapper** will auto
 
 Once your GPS module acquires a **fix**, your position will be updated automatically in both applications.  
 Until then, your **fixed fallback location** will be used instead.
+
