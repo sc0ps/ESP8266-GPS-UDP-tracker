@@ -1,4 +1,12 @@
-# ESP8266 GPS UDP Tracker v1.1
+## Now Open Source — ESP8266 GPS UDP Tracker v1.1  
+
+The full firmware and web interface are now open for everyone to use and modify!  
+
+[**Download the latest release**](https://github.com/sc0ps/ESP8266-GPS-UDP-tracker/releases/latest)  
+[**Read the Build & Flash Guide**](docs/How_to_Build_and_Flash_v1.1.md)
+
+*Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — Scops Owl Designs (Sc0ps)*
+---
 
 [![Version](https://img.shields.io/badge/Version-1.1-green.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-ESP8266-blue.svg)](#)
@@ -186,3 +194,4 @@ Email: [ScopsOwlDesigns@gmail.com](mailto:ScopsOwlDesigns@gmail.com)
 © 2025 Scops Owl Designs  
 All rights reserved.  
 Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+
