@@ -210,3 +210,7 @@ After completing these steps, both **SondeAutoRX** and **ChaseMapper** will auto
 Once your GPS module acquires a **fix**, your position will be updated automatically in both applications.  
 Until then, your **fixed fallback location** will be used instead.
 
+---
+© 2025 Scops Owl Designs  
+Licensed under CC BY-NC 4.0  
+https://creativecommons.org/licenses/by-nc/4.0/

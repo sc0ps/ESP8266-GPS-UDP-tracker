@@ -1,11 +1,11 @@
-# ESP8266 GPS UDP Tracker v1.0
+# ESP8266 GPS UDP Tracker v1.1
 
-[![Version](https://img.shields.io/badge/Version-1.0-brightgreen.svg)](#)
+[![Version](https://img.shields.io/badge/Version-1.1-green.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-ESP8266-blue.svg)](#)
-[![Firmware Only](https://img.shields.io/badge/Firmware-Closed--Source-red.svg)](#)
-[![Protocol](https://img.shields.io/badge/Protocol-UDP-green.svg)](#)
-[![Web Interface](https://img.shields.io/badge/Config-Through_Web_Interface-blue.svg)](#)
-[![License](https://img.shields.io/badge/License-Custom-lightgrey.svg)](#)
+[![Firmware](https://img.shields.io/badge/Firmware-Open--Source-brightgreen.svg)](#)
+[![Protocol](https://img.shields.io/badge/Protocol-UDP-yellowgreen.svg)](#)
+[![Config](https://img.shields.io/badge/Config-Web%20Interface-blue.svg)](#)
+[![License](https://img.shields.io/badge/License-CC--BY--NC%204.0-lightgrey.svg)](#)
 
 A compact ESP8266-based GPS-to-UDP tracker that transmits live GPS coordinates over WiFi.  
 Ideal for DIY tracking, telemetry, and integration with PC or mobile map applications.
@@ -15,38 +15,46 @@ Ideal for DIY tracking, telemetry, and integration with PC or mobile map applica
 ## Features
 
 - **Web-based configuration portal**  
-  Configure WiFi SSID, password, UDP address, and port from your browser.  
+  Configure WiFi SSID, password, UDP address, port, and GPIO pins directly from your browser.
 - **Automatic Access Point setup on first boot**  
-  Starts its own WiFi network for easy configuration.  
-- **Live GPS data broadcast via UDP**  
+  Starts its own WiFi network for easy configuration.
+- **Live GPS data broadcast via UDP**
 - **Status LED indicators**  
   Visual feedback for WiFi and GPS connection status.
+- **Factory Reset via web interface**  
+  Restore all configuration settings to default with a single click.
+- **Open-source release (v1.1)**  
+  Source code included under a CC BY-NC 4.0 license.
 
 ---
 
 ## Quick Start Guide
 
-1. Download the latest firmware: [gps_udp_tracker_v1.0.bin](./firmware/gps_udp_tracker_v1.0.bin)
-2. Flash the provided `.bin` file to your ESP8266 (e.g., Wemos D1 Mini or NodeMCU).
-3. On first boot, the device creates its own WiFi access point:  
+1. Download or clone this repository.  
+2. Build the project with **PlatformIO**.  
+3. Flash the firmware to your ESP8266 (e.g. Wemos D1 Mini or NodeMCU).  
+4. On first boot, the device creates its own WiFi access point:  
    - SSID: `gps_tracker_setup`  
    - Password: `12345678`
-4. Connect and open your browser at **http://192.168.4.1**
-5. Enter your WiFi credentials and UDP settings.
-6. Save and restart — the ESP will reconnect automatically.
-7. GPS data will then be transmitted via UDP every second.
+5. Connect and open your browser at **http://192.168.4.1**.  
+6. Enter your WiFi credentials, UDP settings, and (optional) GPIO pins for RX, TX, and LED.  
+7. Save and restart — the ESP will reconnect automatically.  
+8. GPS data will then be transmitted via UDP every second.
+
+For developers: see the [How to Build and Flash Guide (v1.1)](docs/How_to_Build_and_Flash_v1.1.md)
 
 ---
 
 ## Hardware Setup
 
-| Component      | Connection | ESP8266 Pin |
-|----------------|-------------|--------------|
-| GPS Module TX  | →           | D7 (RX)      |
-| GPS Module RX  | →           | D6 (TX)      |
-| Status LED     | →           | D4           |
-| Power (VCC/GND)| →           | 3.3V / GND   |
+| Component      | Connection | ESP8266 Pin (Default) |
+|----------------|-------------|------------------------|
+| GPS Module TX  | →           | D7 (RX)                |
+| GPS Module RX  | →           | D6 (TX)                |
+| Status LED     | →           | D4                     |
+| Power (VCC/GND)| →           | 3.3V / GND             |
 
+> GPIO pins for RX, TX, and LED can be customized from the web interface.
 
 <p align="left">
   <img src="./images/gps_wiring_cam_m8q_d1mini.png" width="45%" />
@@ -106,12 +114,12 @@ The cases feature:
 The ESP8266 GPS UDP Tracker works seamlessly with **SondeAutoRX** and **ChaseMapper**,  
 providing live GPS position updates to your Raspberry Pi-based tracking setup.
 
-📖 Full setup and configuration guide:  
-[UDP Integration with SondeAutoRX and ChaseMapper](./docs/UDP_Integration_with_SondeAutoRX_and_ChaseMapper.md)
+Full setup and configuration guide:  
+[UDP Integration with SondeAutoRX and ChaseMapper](docs/UDP_Integration_with_SondeAutoRX_and_ChaseMapper.md)
 
 Quick overview:
-- Set your Raspberry Pi IP and UDP port in the web interface  
-- gpsd converts the UDP data into a GPSD stream for AutoRX and ChaseMapper  
+- Set your **UDP broadcast address** and **port (5050)** in the web interface  
+- gpsd on the Pi listens for the UDP data and provides live GPS position to AutoRX and ChaseMapper  
 - Works out of the box for live chase-car tracking
 
 ---
@@ -126,11 +134,12 @@ Quick overview:
 
 ---
 
-## Firmware Version History
+## Developer Resources
 
-| Version | Changes |
-|----------|----------|
-| v1.0 | Initial release with web configuration, UDP broadcast, and LED status system. |
+- [How to Build and Flash (v1.1)](docs/How_to_Build_and_Flash_v1.1.md)
+- [UDP Integration with SondeAutoRX and ChaseMapper](docs/UDP_Integration_with_SondeAutoRX_and_ChaseMapper.md)
+- [UBlox CAM-M8Q to Wemos D1 Mini Wiring Guide](docs/UBlox_CAM-M8Q_to_Wemos_D1_Mini.md)
+- [Changelog](CHANGELOG.md)
 
 ---
 
@@ -152,39 +161,28 @@ The author is not responsible for damage or data loss caused by improper use.
 
 ## License and Source Code
 
-The source code is not public.  
+This version is **open source** and released under the  
+**Creative Commons Attribution–NonCommercial 4.0 International (CC BY-NC 4.0)** license.
 
 You may:
-- Flash and use the provided `.bin` firmware for personal or educational purposes.  
-- Share the compiled `.bin` file unmodified.  
+- Use and modify the source code for personal or educational purposes.  
+- Share modified versions with clear attribution to *Scops Owl Designs (Sc0ps)*.  
 
 You may **not**:
-- Redistribute modified versions of this firmware.  
-- Use it commercially or include it in other projects without written permission.  
+- Use or distribute this project for commercial purposes without written permission.  
 
----
-
-## Future Development
-
-- Optional configuration of RX/TX and LED pins via web interface  
-- Integration with additional mapping software  
+For full terms, see [LICENSE](LICENSE.md).
 
 ---
 
 ## Author
 
-**Scops Owl Designs**  
-GitHub: [https://github.com/sc0ps/ESP8266-GPS-UDP-tracker](https://github.com/sc0ps/ESP8266-GPS-UDP-tracker)
+**Scops Owl Designs (Sc0ps)**  
+GitHub: [https://github.com/sc0ps/ESP8266-GPS-UDP-tracker](https://github.com/sc0ps/ESP8266-GPS-UDP-tracker)  
+Email: [ScopsOwlDesigns@gmail.com](mailto:ScopsOwlDesigns@gmail.com)
 
 ---
 
 © 2025 Scops Owl Designs  
 All rights reserved.  
-
-For license and usage terms, see [LICENSE](./LICENSE).
-
-
-
-
-
-
+Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).

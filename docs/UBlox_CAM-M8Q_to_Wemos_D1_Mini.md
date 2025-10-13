@@ -88,7 +88,6 @@ This wiring is designed for:
 ![GPS Wiring](../images/gps_wiring_cam_m8q_d1mini.png)
 
 ---
-
-**Scops Owl Designs – 2025**
-
-
+© 2025 Scops Owl Designs  
+Licensed under CC BY-NC 4.0  
+https://creativecommons.org/licenses/by-nc/4.0/
