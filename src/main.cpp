@@ -1,18 +1,23 @@
 /*
- * ESP8266 GPS UDP Tracker Firmware - v1.2 (Public Release)
- * --------------------------------------------------------
- * Author: Scops Owl Designs (Sc0ps)
- * Contact: ScopsOwlDesigns@gmail.com
+ * ESP8266 GPS UDP Tracker
+ * Version: 1.1
+ * 
+ * Copyright (C) 2025 Scops Owl Designs (Sc0ps)
+ * Email: ScopsOwlDesigns@gmail.com
  * Repository: https://github.com/sc0ps/ESP8266-GPS-UDP-tracker
  *
- * Copyright (c) 2025 Scops Owl Designs
- * Licensed under CC BY-NC 4.0
- * https://creativecommons.org/licenses/by-nc/4.0/
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
  *
- * Description:
- *   Firmware for ESP8266 (e.g. Wemos D1 Mini) to forward GPS NMEA data
- *   over UDP.  Includes Wi-Fi configuration via web interface and
- *   runtime-selectable GPIO pins for LED, RX and TX.
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
 #include <ESP8266WiFi.h>
