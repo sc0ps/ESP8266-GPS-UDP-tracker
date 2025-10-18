@@ -12,7 +12,7 @@ The full firmware and web interface are now open for everyone to use and modify!
 [![Firmware](https://img.shields.io/badge/Firmware-Open--Source-brightgreen.svg)](#)
 [![Protocol](https://img.shields.io/badge/Protocol-UDP-yellowgreen.svg)](#)
 [![Config](https://img.shields.io/badge/Config-Web%20Interface-blue.svg)](#)
-[![License](https://img.shields.io/badge/License-CC--BY--NC%204.0-lightgrey.svg)](#)
+[![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](./LICENSE.md)
 
 A compact ESP8266-based GPS-to-UDP tracker that transmits live GPS coordinates over WiFi.  
 Ideal for DIY tracking, telemetry, and integration with PC or mobile map applications.
@@ -168,17 +168,13 @@ The author is not responsible for damage or data loss caused by improper use.
 
 ## License and Source Code
 
-This version is **open source** and released under the  
-**Creative Commons Attribution–NonCommercial 4.0 International (CC BY-NC 4.0)** license.
+This project is licensed under the **GNU General Public License v3.0 (GPLv3)**.  
+You may freely use, modify, and share this code as long as:
+- The source remains open under the same license.
+- Proper credit is given to **Scops Owl Designs (Sc0ps)**.
+- Commercial redistribution complies with GPLv3 terms.
 
-You may:
-- Use and modify the source code for personal or educational purposes.  
-- Share modified versions with clear attribution to *Scops Owl Designs (Sc0ps)*.  
-
-You may **not**:
-- Use or distribute this project for commercial purposes without written permission.  
-
-For full terms, see [LICENSE](LICENSE.md).
+📄 Full license text: [LICENSE.md](./LICENSE.md)
 
 ---
 
@@ -190,8 +186,11 @@ Email: [ScopsOwlDesigns@gmail.com](mailto:ScopsOwlDesigns@gmail.com)
 
 ---
 
-© 2025 Scops Owl Designs  
-All rights reserved.  
-Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+© 2025 Scops Owl Designs (Sc0ps)  
+Licensed under the [GNU General Public License v3.0](./LICENSE.md).  
+You are free to use, modify, and distribute this software under the same license.  
+For details, see the full license text in the repository.
+
+
 
 
