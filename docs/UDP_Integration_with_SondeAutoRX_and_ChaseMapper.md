@@ -211,6 +211,7 @@ Once your GPS module acquires a **fix**, your position will be updated automatic
 Until then, your **fixed fallback location** will be used instead.
 
 ---
-© 2025 Scops Owl Designs  
-Licensed under CC BY-NC 4.0  
-https://creativecommons.org/licenses/by-nc/4.0/
+© 2025 Scops Owl Designs (Sc0ps)  
+Licensed under the [GNU General Public License v3.0](./LICENSE.md).  
+You are free to use, modify, and distribute this software under the same license.  
+For details, see the full license text in the repository.
