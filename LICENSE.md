@@ -1,42 +1,51 @@
-# License — ESP8266 GPS UDP Tracker v1.1
+# GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
 
-Copyright (c) 2025 Scops Owl Designs (Sc0ps)  
-Contact: ScopsOwlDesigns@gmail.com  
+Copyright (C) 2025 Scops Owl Designs (Sc0ps)
+Email: ScopsOwlDesigns@gmail.com
 
----
-
-This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)** license.
-
-You are free to:
-
-- **Share** — copy and redistribute the material in any medium or format  
-- **Adapt** — remix, transform, and build upon the material  
-
-Under the following terms:
-
-1. **Attribution (BY)** — You must give appropriate credit to *Scops Owl Designs (Sc0ps)*,  
-   provide a link to this repository, and indicate if changes were made.  
-
-2. **NonCommercial (NC)** — You may not use the material for commercial purposes.  
-
-3. **No additional restrictions** — You may not apply legal or technological measures  
-   that legally restrict others from doing anything the license permits.  
+Everyone is permitted to copy and distribute verbatim copies
+of this license document, but changing it is not allowed.
 
 ---
 
-### Summary
+## Preamble
 
-- The firmware and source code may be freely used, studied, and modified  
-  for **personal or educational use**.  
-- Redistribution of modified versions must clearly state changes made  
-  and credit *Scops Owl Designs (Sc0ps)*.  
-- Commercial distribution, sale, or integration requires **written consent**.  
+The GNU General Public License is a free, copyleft license for
+software and other kinds of works.
+
+The licenses for most software and other practical works are designed
+to take away your freedom to share and change the works.  
+By contrast, the GNU General Public License is intended to guarantee your freedom to
+share and change all versions of a program—to make sure it remains free software for all its users.
+
+We, the Free Software Foundation, use the GNU General Public License for most of our software;
+it applies also to any other work released this way by its authors.
+
+You can apply it to your programs, too.
 
 ---
 
-Full license text:  
-[Creative Commons BY-NC 4.0 Legal Code](https://creativecommons.org/licenses/by-nc/4.0/legalcode)
+## TERMS AND CONDITIONS
+
+**0. Definitions.**  
+“This License” refers to version 3 of the GNU General Public License.  
+“Copyright” also means copyright-like laws that apply to other kinds of works.  
+“The Program” refers to any copyrightable work licensed under this License.  
+
+[...]
+
+(The rest of the standard GPLv3 text continues here — you can safely copy the full version from:  
+https://www.gnu.org/licenses/gpl-3.0.txt)
 
 ---
 
-Contact: [ScopsOwlDesigns@gmail.com](mailto:ScopsOwlDesigns@gmail.com)
+## Additional Notice
+
+This project — **ESP8266 GPS UDP Tracker** — is licensed under the GNU General Public License v3.0.  
+You are free to use, modify, and distribute this software under the same license.  
+
+Please credit:
+**Scops Owl Designs (Sc0ps)**  
+📧 ScopsOwlDesigns@gmail.com  
+🔗 [https://github.com/sc0ps/ESP8266-GPS-UDP-tracker](https://github.com/sc0ps/ESP8266-GPS-UDP-tracker)
