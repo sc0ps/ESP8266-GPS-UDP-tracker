@@ -88,6 +88,7 @@ This wiring is designed for:
 ![GPS Wiring](../images/gps_wiring_cam_m8q_d1mini.png)
 
 ---
-© 2025 Scops Owl Designs  
-Licensed under CC BY-NC 4.0  
-https://creativecommons.org/licenses/by-nc/4.0/
+© 2025 Scops Owl Designs (Sc0ps)  
+Licensed under the [GNU General Public License v3.0](./LICENSE.md).  
+You are free to use, modify, and distribute this software under the same license.  
+For details, see the full license text in the repository.
